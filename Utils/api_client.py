@@ -11,8 +11,8 @@ class APIclient:
 
     def get(self, endpoint):
         url = f'{self.base_url}/{endpoint}'
-        response = requests.get(url=url, headers=self.header)
-        return response
+        result = requests.get(url=url, headers=self.header)
+        return result
 
     def post(self,endpoint,data):
         url=f"{self.base_url}/{endpoint}"
